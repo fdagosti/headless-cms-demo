@@ -16,6 +16,7 @@ console.log("2. APIIIII ",fullSlug)
 
 let { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
 	version: getSbVersion,
+	cv: Date.now(),
 });
 
 console.log("1. on main page API ",data.story.content.body)
