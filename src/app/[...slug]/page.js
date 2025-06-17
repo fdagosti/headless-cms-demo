@@ -10,6 +10,10 @@ const { slug } = await params;
 const fullSlug = slug ? slug.join('/') : 'home';
 
 const storyblokApi = getStoryblokApi();
+
+console.log("1. APIIIII ",storyblokApi)
+console.log("2. APIIIII ",fullSlug)
+
 let { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
 	version: getSbVersion,
 });
