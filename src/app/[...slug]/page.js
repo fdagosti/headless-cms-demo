@@ -14,7 +14,7 @@ let { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
 	version: getSbVersion,
 });
 
-console.log("on main page API ",data)
-
+console.log("1. on main page API ",data.story.content.body)
+console.log("2. on main page API ",data)
 return <StoryblokStory story={data.story} />;
 }
