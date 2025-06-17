@@ -1,5 +1,5 @@
 import { StoryblokServerComponent } from '@storyblok/react/rsc'
-export const dynamic = "force-dynamic";
+
 export default function Grid({ blok }){
 return (
 	<div className="grid">
