@@ -12,7 +12,7 @@ const fullSlug = slug ? slug.join('/') : 'home';
 const storyblokApi = getStoryblokApi();
 
 console.log("1. APIIIII ",storyblokApi)
-console.log("2. APIIIII ",fullSlug)
+console.log("2. APIIIII ",fullSlug, " ", getSbVersion())
 
 let { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
 	version: getSbVersion,
