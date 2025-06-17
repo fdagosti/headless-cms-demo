@@ -15,7 +15,7 @@ console.log("1. APIIIII ",storyblokApi)
 console.log("2. APIIIII ",fullSlug, " ", getSbVersion())
 
 let { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
-	version: getSbVersion,
+	version: getSbVersion(),
 	cv: Date.now(),
 });
 
