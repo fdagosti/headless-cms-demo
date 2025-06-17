@@ -5,6 +5,8 @@ import Teaser from "@/components/Teaser";
 
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc';
 
+console.log("Hello, starting the website prevview? ", process.env.STORYBLOK_IS_PREVIEW)
+
 console.log(process.env)
 
 export const getStoryblokApi = storyblokInit({
