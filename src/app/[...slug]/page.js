@@ -2,6 +2,8 @@ import { StoryblokStory } from '@storyblok/react/rsc';
 import { getStoryblokApi } from '@/lib/storyblok';
 import getSbVersion from '../../utils/getSbVersion';
 
+const dynamic = 'force-dynamic'
+
 export default async function Page({ params }) {
 const { slug } = await params;
 
