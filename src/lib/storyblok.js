@@ -11,7 +11,7 @@ console.log(process.env)
 
 export const getStoryblokApi = storyblokInit({
 accessToken: process.env.STORYBLOK_DELIVERY_API_ACCESS_TOKEN,
-bridge: process.env.STORYBLOK_IS_PREVIEW === 'true' ? true : false,
+bridge: process.env.STORYBLOK_IS_PREVIEW === 'true' ? true : true,
 use: [apiPlugin],
 components: {
     page: Page,
